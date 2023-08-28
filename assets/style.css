@@ -1,0 +1,359 @@
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --bg: #232946;
+    --text: #b8c1ec;
+    --secondbg: #fffffe;
+    --red: rgb(214, 10, 10);
+}
+
+body {
+    position: relative;
+    scroll-behavior: smooth;
+    background-color: var(--bg) !important;
+    transition: all 1s;
+
+}
+
+.container {
+    position: relative;
+}
+
+.navbar {
+    background-color: var(--bg) !important;
+    filter: blur(100%);
+    padding: 10px;
+}
+
+.navbar-brand {
+    color: var(--text) !important;
+
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    position: relative;
+    color: var(--text) !important;
+}
+
+.nav-link:hover {
+    color: var(--secondbg) !important;
+}
+
+
+.dark h5 i {
+    position: absolute !important;
+    right: 10%;
+    cursor: pointer;
+    margin-top: -8px;
+
+}
+
+.span {
+    font-size: 10px;
+    position: absolute;
+    padding-left: 10px;
+    top: 1px;
+}
+
+.content {
+    width: 100%;
+}
+
+.content,
+.content-image {
+    color: var(--text);
+    margin-top: 20%;
+}
+
+.content p {
+    width: 70%;
+}
+
+.content h1 {
+    font-size: 40px
+}
+
+.content h4 {
+    font-weight: 200;
+}
+
+.content-header {
+    letter-spacing: 6px;
+    font-size: 9px;
+}
+
+.content span {
+    color: red;
+}
+
+.content-header {
+    font-size: 9px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.content-header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 15px;
+    height: 2px;
+    background-color: var(--red);
+}
+
+.content-image {
+    position: relative;
+}
+
+.content-image span {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+
+.darkmode {
+    background-color: #121111 !important;
+    color: black !important;
+    transition: all 1s;
+}
+
+.icon {
+    letter-spacing: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.color {
+    color: #fffffe !important;
+}
+
+.main-container {
+    padding-top: 8rem !important;
+    width: 100%;
+}
+
+.main-container .content-header {
+    color: var(--text);
+}
+
+.main-header {
+    color: var(--text);
+    margin-bottom: 6%;
+}
+
+.main-header p {
+    width: 60%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+
+}
+
+.main-card .card {
+    background-color: rgba(0, 0, 0, 0.042) !important;
+    backdrop-filter: blur(10px);
+
+
+}
+
+.card-text {
+
+    color: white !important;
+
+}
+
+.service-container {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 1px;
+
+}
+
+.service-content {
+    margin-top: 25%;
+}
+
+.service-header h1,
+p {
+    color: var(--text);
+}
+
+.service-header p {
+    width: 80%;
+}
+
+.service-card {
+    flex-wrap: wrap;
+    background-color: #b8c1ec34;
+    backdrop-filter: blur(50px);
+    padding: 30px;
+    border-radius: 6px;
+
+}
+
+.service-card .card {
+    background-color: #2329468f !important;
+}
+
+.card-body h5 {
+    color: white;
+}
+
+.contact {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.container-contact {
+    width: 100%;
+    padding-top: 9rem !important;
+}
+
+.contact-item {
+    width: 500px;
+}
+
+.cop {
+    background-color: white !important;
+    padding: 20px;
+    margin-top: 6rem;
+
+}
+
+.cop-text p {
+    padding-top: 1rem;
+    color: #121111;
+}
+
+.container-back {
+    display: flex;
+    justify-content: end;
+}
+
+.back {
+    width: 60px;
+    height: 60px;
+    background-color: greenyellow;
+    border-radius: 100%;
+    box-shadow: 0 6px 7px 0 black;
+    position: relative;
+    display: inline-block;
+
+}
+
+.back i {
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 170%;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    transition: opacity 0.2s, visibility 0.2s;
+    bottom: 100%;
+    left: 56%;
+    transform: translateX(-50%);
+}
+
+.back:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media(max-width:980px) {
+    html {
+        font-size: 80%;
+    }
+
+    .dark h5 i {
+        position: absolute !important;
+        right: 33%;
+    }
+
+    .content p {
+        width: 100%;
+    }
+
+    .content-container {
+        flex-wrap: wrap;
+
+
+    }
+
+    .content-image .image img {
+        margin: auto;
+    }
+
+    .main-container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .main {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .main-header,
+    .service-header,
+    .content {
+        padding: 10px;
+    }
+
+    .main-header p {
+        width: 100%;
+    }
+
+    .card {
+        width: 26rem !important;
+    }
+
+    .service-container {
+        margin-bottom: 4rem;
+    }
+
+    .service-content {
+        flex-wrap: wrap;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    .service-header p {
+        width: 100%;
+    }
+    .contact {
+        flex-wrap: wrap;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .back {
+        display: none;
+    }
+}
